@@ -1,0 +1,49 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}      /*para que al por ejm restar tamaño, respete el tamaño anterior, los elementos no crecen al darles espacios internos, osea paddins*/
+
+html{font-family: "Roboto","sans-serif";background-color:black; color: white;}
+   
+header{
+    background-color: black;
+    padding: 15px 0;                    /*espacio hacia adntro, margen pone eespacios afuera*/
+    position: fixed;                    /*posicion fija, nos sigue en todas las pantallas*/
+    top: 0;
+    left: 0;                            /* como con fixed ya no ocupa un espacio en la estructura, se coloca para que se ponga antes de la otra section*/
+    z-index: 2;
+    width: 100%;}
+
+header .container{
+    display: grid; 
+    grid-template-rows: 30px;
+    grid-template-columns: 1fr;                  
+    justify-content: space-between;    
+    place-items: center;
+    background-color: aqua;
+}               
+   
+
+header .container nav li{     /*para los a dentro de header*/
+    display: inline-block;
+    color: red;
+    margin: 0 15px;}
+
+header .container nav a{
+    text-decoration: none;
+    color: red;
+    margin: 0 15px;
+}
+
+header .container .hamb{
+    display: none;}
+
+.container{
+        max-width: 1200px;          /* ancho de los containers*/ 
+        margin: 0 auto;         /* margen 0 arriba y abajo, auto a los lados*/
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;}
+
+footer .barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding: 20px 15px;}
+

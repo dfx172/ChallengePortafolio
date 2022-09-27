@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        Mi pokedex
+    </header>
+    <main class="pokedex">
+        <section class="pokedex-pokemon">
+          <div class="pokemonimg">
+            <button class="pokemon-button" onclick="prevImg()">izq</button>  
+            <img src="" alt="Nombre de pokemon" id="pokeimg">
+            <button class="pokemon-button" onclick="nextImg()">der></button>
+        </div>
+        </section>
+        <div class="pokemon-stats">
+            <div class="pokemon-damage">
+                <span>Damage</span>
+                <span id="dmg">0</span>
+            </div>
+            <div class="pokemon-defense">
+                <span>Defense</span>
+                <span id="dfs">0</span>
+            </div>
+            <div class="pokemon-defenseesp">
+                <span>Defense special</span>
+                <span id="dfesp">0</span>
+            </div>
+            <div class="pokemon-velocity">
+                <span>velocity</span>
+                <span id="vel">0</span>
+            </div>
+        </div>
+        <div class="pokedex-next">
+            <button class="pokedex-button">prev pokemon</button>
+            <button class="pokedex-button">next pokemon</button>
+        </div>
+        <section class="pokedes-info">
+            <div class="pokemon-description">
+                <p id="desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Quibusdam repellendus dolorem magnam? Tempora ducimus, ullam, 
+                     eos quisquam iste autem aspernatur tenetur ea necessitatibus
+                      labore sapiente consequuntur eum fugiat itaque quibusdam.
+                </p>
+            </div>
+            <ul class="pokedex-evolution" id="evol">
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        hecho con love
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

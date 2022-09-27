@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/79614db57b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li>
+                    <button class="button header__button" onclick="executeChronometer()" id="chronometer__button" title="Chronometer"><i class="fa-solid fa-clock"></i></button>
+                </li>
+                <li>
+                    <button class="button header__button" id="timer__button" title="Timer" onclick="executetimer()"><i class="fa-solid fa-hourglass"></i></button>
+                </li>
+                <li>
+                    <button class="button header__button" id="alarm__button"  title="Alarms" onclick="executePomodoro()"><i class="fa-solid fa-bell"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="principal">
+            <h1 class="hero__tittle">Chronometer</h1>
+            <div class="hero__time">
+                <p id="time"><span id="minutes">00</span>: <span id="seconds">00</span></p>
+            </div>
+            <div class="hero__buttons">
+                <button onclick="startChronometer()" class="button hero__button" type="button">Start</button>
+                <button onclick="stopChronometer()" class="button hero__button" type="button">Stop</button>
+                <button onclick="resetChronometer()" class="button hero__button" type="button">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="./codigo.js"></script>
+</body>
+</html>
